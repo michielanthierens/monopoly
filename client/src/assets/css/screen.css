@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: Minecraft, Arial, sans-serif;
+    font-size: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+p:last-of-type {
+    margin-bottom: 2rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 5rem;
+}
+
+select {
+    font-size: 1rem;
+    width: 100%;
+}
+
+form label {
+    font-size: 2rem;
+}
+
+form input {
+    font-size: 1.5rem;
+}
+
+form input[type="submit"] {
+    width: 20rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    border-color: black;
+}
+
+.hidden {
+    display: none;
+}

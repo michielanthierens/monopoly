@@ -1,0 +1,66 @@
+body {
+    background-image: url("../media/backgroundIndex.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body > div {
+    padding: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+form label {
+    font-family: Minecraft, Arial, sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+
+
+p, #form-back input, input#username, #form-player-amount input {
+    font-family: Minecraft, Arial, sans-serif;
+}
+
+p {
+    font-size: 2rem;
+}
+
+/* form layout */
+#home-screen input[type="text"] {
+    margin: auto;
+}
+
+#home-screen form label, #home-screen form input[type="text"] {
+    display: block;
+}
+
+form input[type="submit"] {
+    margin-top: 5rem;
+}
+
+#select-players input[type="submit"] {
+    margin-right: 3rem;
+}
+
+#select-players input[type="submit"]:last-of-type {
+    margin-right: 0;
+}
+
+#back {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+#back input[type="submit"] {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+

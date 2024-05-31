@@ -1,0 +1,431 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: lightgrey;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: Minecraft, Arial, sans-serif;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*********content for players***********/
+.content-container {
+    width: 40vw;
+    height: 100vh;
+}
+
+.display_players {
+    width: 90%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+
+}
+
+ul#player_hud_list li {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul#player_hud_list li.selected {
+    border: 0.125rem solid red;
+}
+
+ul#player_hud_list li h3 {
+    font-family: Minecraft, Arial, sans-serif;
+    margin-bottom: 0.25rem;
+}
+
+ul#player_hud_list li img {
+    max-height: 100%;
+    width: 2rem;
+}
+
+/****display for possessions****/
+
+#possessions {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 90%;
+    height: 50vh;
+    overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards ul {
+     margin-bottom: 1rem;
+ }
+
+div#possessions>ul,
+div#possessions div.cards>ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+}
+
+.cards li {
+    margin-right: 0.5rem;
+}
+
+.cards h3 {
+    font-size: 2rem;
+}
+
+.cards p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.optionsCardsButton {
+    width: 100%;
+    font-weight: bold;
+}
+
+.cards>ul>li {
+    padding: 0.5rem;
+    border: 0.125rem black solid;
+}
+
+.card_options {
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+ul.card_options li {
+    margin-bottom: 0.75rem;
+    margin-right: 0;
+    width: 100%;
+}
+
+.card_options li:last-of-type {
+    margin-bottom: 0;
+}
+
+.card_options input {
+    width: 100%;
+}
+
+ul#get_out_of_jail_cards li {
+    text-align: center;
+    max-width: 50%;
+    background-color: white;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border-radius: 10%;
+}
+
+ul#get_out_of_jail_cards li p:first-child {
+    font-family: Minecraft, Arial, sans-serif;
+}
+
+ul#get_out_of_jail_cards img {
+    max-width: 5rem;
+}
+
+/*********grid***********/
+
+.grid-container {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    height: 95vh;
+    width: 60vw;
+    display: grid;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.infoSettings {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sure p {
+    text-align: center;
+}
+
+
+.rollDice {
+    border: 2px solid darkblue;
+    color: darkblue;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rollDice:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.grid-item {
+    border: 2px solid black;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+.one {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.two {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.three {
+    position: absolute;
+    bottom: 35px;
+    right: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.four {
+    position: absolute;
+    left: 5px;
+    bottom: 35px;
+    height: 30px;
+    width: 30px;
+}
+
+.fa-dice {
+    height: 100%;
+    width: 2rem;
+}
+
+.infoImg,
+.leaveImg,
+.dice {
+    margin: 0 1rem 0 1rem;
+    height: 2rem;
+    width: 2rem;
+    color: darkblue;
+}
+
+section h3 {
+    font-family: Minecraft, Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+img.leaveImg:hover {
+    cursor: pointer;
+}
+
+.sure a, #leaveOptions a, button {
+    display: inline-block;
+    background: salmon;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+#leaveOptions button {
+    border: none;
+    padding: 0.87rem;
+}
+
+/*****colors**********/
+
+.gameboardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33%;
+}
+
+.lightblue {
+    background-color: lightblue;
+    color: black;
+}
+
+.purple {
+    background-color: purple;
+    color: white;
+}
+
+
+.darkblue {
+    background-color: darkblue;
+    color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.darkgreen {
+    background-color: darkgreen;
+    color: white;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.white {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.snow,
+.jungle,
+.desert,
+.mountains {
+    position: relative;
+}
+
+.snow:before,
+.desert:before,
+.jungle:before,
+.mountains:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.snow:before {
+    background-image: url('../media/snow.jpg');
+}
+
+.desert:before {
+    background-image: url('../media/desert.png');
+}
+
+.jungle:before {
+    background-image: url('../media/jungle.png');
+}
+
+.mountains:before {
+    background-image: url('../media/mountain.jpg');
+}
+
+#rollDiceScreen {
+    position: absolute;
+    padding: 10rem 20rem 10rem 20rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: solid black;
+}
+
+img.dice {
+    max-width: 10rem;
+    margin-left: 2rem;
+}
+
+.actions {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.actions button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 7rem;
+}
+
+.actions button:first-of-type, .actions button:nth-of-type(2) {
+    margin-bottom: 0.5rem;
+}
+
+.actions button:first-of-type, .actions button:nth-of-type(3) {
+    margin-right: 0.5rem;
+}
+
+ul#player_hud_list  li.player_own_box {
+    background-color: lightblue;
+}
+
+#house0, #house1, #house2, #house3, #house4, #house5 {
+    background-size: 100%;
+    background-position: center;
+}
+
+#house0 {
+    background-image: url("../../images/houseImages/houses0.png");
+}
+#house1 {
+    background-image: url("../../images/houseImages/houses1.png");
+}
+#house2 {
+    background-image: url("../../images/houseImages/houses2.png");
+}
+#house3 {
+    background-image: url("../../images/houseImages/houses3.png");
+}
+#house4 {
+    background-image: url("../../images/houseImages/houses4.png");
+}
+#house5 {
+    background-image: url("../../images/houseImages/houses5.png");
+}
+
+
+
+
+
+.hidden {
+    display: none;
+}

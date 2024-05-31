@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Monopoly Lobby</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/screen.css">
+    <link rel="stylesheet" href="../assets/css/waiting-screen.css">
+
+    <link href="http://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+
+    <script src="../assets/js/config.js"></script>
+
+    <script src="../assets/js/data-connector/error_handler.js"></script>
+    <script src="../assets/js/data-connector/api_communication_abstractor.js"></script>
+    <script src="../assets/js/data-connector/local_storage_abstractor.js"></script>
+
+    <script src="../assets/js/initialiser.js"></script>
+    <script src="../assets/js/scripts/waiting_screen.js"></script>
+    <script src="../assets/js/scripts/lobbies.js"></script>
+
+</head>
+
+<body>
+    <h1>Mineopoly</h1>
+
+    <section id="code">
+        <h2>Game ID</h2>
+        <p></p>
+    </section>
+
+    <form id="player-list" method="post" action="#">
+        <label for="players-and-pawns">Current players:</label>
+        <select id="players-and-pawns" name="players-and-pawns" multiple="multiple">
+        </select>
+
+        <label for="pawn_list">Select a pawn:</label>
+        <select id="pawn_list" name="pawn_list">
+        </select>
+
+        <input type="submit" value="Ready up!" id="readyButton">
+    </form>
+
+    <p id="joined">Ready: <span></span>/<span></span></p>
+    <p>waiting for more players...</p>
+
+    <div id="controls">
+        <a href="lobbies.html">Back</a>
+
+        <a href="rules_page.html" target="_blank">
+            <img class="infoImg" src="../assets/media/info.png" alt="info">
+        </a>
+    </div>
+</body>
+
+</html>

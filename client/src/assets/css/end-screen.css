@@ -1,0 +1,129 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+h1 {
+    font-family: Minecraft, Arial, sans-serif;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+img {
+    max-width: 40%;
+}
+
+ul {
+    margin-left: 10rem;
+    list-style: decimal;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+li > p {
+    font-family: Minecraft, Arial, sans-serif;
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 0.5rem;
+}
+
+li div p {
+    margin-left: 2rem;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    background-color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+    border-color: black;
+}
+
+li p.creeper {
+    background-image: url("#");
+}
+
+li p.enderman {
+    background-image: url("#");
+}
+
+li p.cow {
+    background-image: url("#");
+}
+
+li p.blaze {
+    background-image: url("#");
+}
+
+li p.slime {
+    background-image: url("#");
+}
+
+li p.spider {
+    background-image: url("#");
+}
+
+li p.steve {
+    background-image: url("#");
+}
+
+li p.villager {
+    background-image: url("#");
+}
+
+li p.nether_skeleton {
+    background-image: url("#");
+}
+
+li p.zombie {
+    background-image: url("#");
+}
+
+li p.guardian {
+    background-image: url("#");
+}
+
+li p.pig {
+    background-image: url("#");
+}
+
+li p.sheep {
+    background-image: url("#");
+}
+
+li p.skeleton {
+    background-image: url("#");
+}
+
+

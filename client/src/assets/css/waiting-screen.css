@@ -1,0 +1,87 @@
+body {
+    background-image: url("../media/backgroundWaiting.jpg");
+    background-size: 100%;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+p, h2 {
+    color: white;
+}
+
+label, select {
+    font-family: Minecraft, Arial, sans-serif;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+}
+
+select {
+    margin-bottom: 1rem;
+}
+
+#joined {
+    margin-top: 2rem;
+}
+
+#ready {
+    font-style: italic;
+}
+
+#ready ~ #controls {
+    margin: 0;
+}
+
+#controls {
+    margin: 3.5rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#player-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player-list select {
+    width: 25%;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+
+#player-list select:nth-of-type(2) {
+    height: 2rem;
+}
+
+#join-game, #create-new-game {
+    display: inline;
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+#controls a {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#controls a:first-child {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    font-family: Minecraft, Arial, sans-serif;
+}
+
+#controls a:nth-child(2){
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}

@@ -1,0 +1,78 @@
+body {
+    background-image: url("../media/backgroundLobbies.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#forms {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+}
+
+#forms > label {
+    font-size: 2rem;
+    font-family: Minecraft, Arial, sans-serif;
+}
+
+#search_for_gameID_form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search_for_gameID_form label {
+    font-size: 1.5rem;
+}
+
+#search_for_gameID_form input {
+    font-size: 1rem;
+    width: 57%
+}
+
+button {
+    font-size: 1rem;
+}
+
+#forms div {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#available-games {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+#form-choose-game div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#form-choose-game button {
+    padding: 0.25rem;
+}
+
+#form-choose-game button:hover {
+    cursor: pointer;
+}
+
+#controls a {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#controls a:first-child {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    font-family: Minecraft, Arial, sans-serif;
+}
+
+#controls a:nth-child(2){
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}

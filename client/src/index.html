@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Monopoly</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/screen.css">
+    <link rel="stylesheet" href="assets/css/home-screen.css">
+
+    <link href="http://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+
+    <script src="assets/js/config.js"></script>
+
+    <script src="assets/js/data-connector/error_handler.js"></script>
+    <script src="assets/js/data-connector/api_communication_abstractor.js"></script>
+    <script src="assets/js/data-connector/local_storage_abstractor.js"></script>
+
+    <script src="assets/js/initialiser.js"></script>
+    <script src="assets/js/scripts/homescreen.js"></script>
+</head>
+
+<body>
+    <h1>Mineopoly</h1>
+    <div id="home-screen" class="">
+        <form id="form-username" method="post" action="#">
+            <label for="username">Username: </label>
+            <input type="text" id="username">
+
+            <input type="submit" id="start-game" value="Start game">
+        </form>
+    </div>
+
+    <div id="select-players" class="hidden">
+        <p>Choose the amount of players:</p>
+        <form id="form-player-amount" method="post" action="#">
+            <input type="submit" id="2" value="2">
+            <input type="submit" id="3" value="3">
+            <input type="submit" id="4" value="4">
+        </form>
+    </div>
+
+    <div id="back" class="hidden">
+        <form id="form-back">
+            <input type="submit" value="Back">
+        </form>
+    </div>
+</body>
+</html>
